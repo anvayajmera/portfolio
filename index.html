@@ -336,45 +336,235 @@ h6 {
 }
 
 /* footer styling */
-.footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+#panther-footer-final {
+  background: linear-gradient(135deg, #0e2b52 0%, #0a1f3c 100%);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--default-font);
   font-size: 14px;
-  padding: 40px 0;
   position: relative;
+  overflow: hidden;
 }
 
-.footer .copyright p {
+#panther-footer-final .footer-shape-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translateY(-1px);
+}
+
+#panther-footer-final .footer-shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 110px;
+}
+
+#panther-footer-final .footer-shape-divider .shape-fill {
+  fill: #f7faff;
+}
+
+#panther-footer-final .panther-footer-content-area {
+  padding: 120px 0 50px 0;
+  position: relative;
+  z-index: 2;
+}
+
+#panther-footer-final .panther-footer-info .panther-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+#panther-footer-final .panther-footer-logo .footer-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#panther-footer-final .panther-footer-logo .footer-name {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+#panther-footer-final .panther-footer-logo .footer-title {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+}
+
+#panther-footer-final .panther-footer-info p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
   margin-bottom: 0;
 }
 
-.footer .social-links {
-  margin-top: 20px;
+#panther-footer-final .panther-footer-links h4,
+#panther-footer-final .panther-footer-contact h4 {
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
 }
 
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin: 0 5px;
+#panther-footer-final .panther-footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#panther-footer-final .panther-footer-links ul li {
+  padding: 6px 0;
+}
+
+#panther-footer-final .panther-footer-links ul i {
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  padding-right: 6px;
+  font-size: 12px;
+}
+
+#panther-footer-final .panther-footer-links ul a {
+  color: rgba(255, 255, 255, 0.75);
   transition: 0.3s;
 }
 
-.footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+#panther-footer-final .panther-footer-links ul a:hover {
+  color: #ffffff;
 }
 
-.footer .credits {
-  margin-top: 10px;
-  font-size: 13px;
+#panther-footer-final .panther-footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#panther-footer-final .panther-footer-contact ul li {
+  padding: 6px 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#panther-footer-final .panther-footer-contact ul i {
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  padding-right: 6px;
+  font-size: 12px;
+}
+
+#panther-footer-final .panther-footer-contact a {
+  color: rgba(255, 255, 255, 0.85);
+  transition: 0.3s;
+}
+
+#panther-footer-final .panther-footer-contact a:hover {
+  color: #ffffff;
+}
+
+#panther-footer-final .panther-footer-bottom-bar {
+  background-color: var(--accent-color);
+  padding: 15px 0;
+  position: relative;
+  z-index: 2;
+  min-height: 60px;
+}
+
+#panther-footer-final .copyright-credits-wrapper {
+  color: #fff;
   text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#panther-footer-final .footer-social-container {
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  width: 236px;
+  height: 54px;
+}
+
+#panther-footer-final .footer-social-blob-svg {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#panther-footer-final .footer-social-blob-path {
+  fill: color-mix(in srgb, var(--accent-color), transparent 10%);
+}
+
+#panther-footer-final .footer-social-container .social-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#panther-footer-final .footer-social-container .social-link:hover {
+  transform: translateY(-3px);
+}
+
+#panther-footer-final .footer-social-container .social-link:nth-of-type(1) {
+  top: -30px;
+  left: 15px;
+}
+
+#panther-footer-final .footer-social-container .social-link:nth-of-type(2) {
+  top: -35px;
+  left: 75px;
+}
+
+#panther-footer-final .footer-social-container .social-link:nth-of-type(3) {
+  top: -30px;
+  left: 135px;
+}
+
+#panther-footer-final .footer-social-container .social-link:nth-of-type(4) {
+  top: -30px;
+  left: 190px;
+}
+
+@media (max-width: 992px) {
+  #panther-footer-final .panther-footer-info,
+  #panther-footer-final .panther-footer-contact {
+    text-align: center;
+  }
+
+  #panther-footer-final .panther-footer-logo {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #panther-footer-final .panther-footer-bottom-bar .container {
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 70px;
+  }
+
+  #panther-footer-final .footer-social-container {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+  }
 }
 
 /* scroll top button */
@@ -537,8 +727,29 @@ section,
   max-width: 600px;
 }
 
+.hero .hero-name {
+  font-family: var(--heading-font);
+  color: color-mix(in srgb, var(--heading-color), transparent 10%);
+  font-weight: 700;
+  font-size: 4.3rem;
+  letter-spacing: 0.6px;
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .hero .hero-name {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .hero-name {
+    font-size: 3rem;
+  }
+}
+
 .hero .hero-title {
-  font-size: 3.5rem;
+  font-size: 2.1rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -546,13 +757,13 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-title {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 576px) {
   .hero .hero-title {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -833,6 +1044,227 @@ section,
 
   50% {
     transform: translateY(-20px);
+  }
+}
+
+/* projects */
+.projects {
+  background: linear-gradient(180deg, #f7faff 0%, #ffffff 40%);
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .section-title p {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.projects .project-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects .project-card {
+  background: var(--surface-color);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px color-mix(in srgb, var(--default-color), transparent 88%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.3s ease;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.projects .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--accent-color), transparent 82%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 65%);
+}
+
+.projects .project-cover {
+  position: relative;
+  padding: 18px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  background-size: 125%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.projects .project-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(15, 116, 211, 0.18), rgba(96, 169, 255, 0.18));
+}
+
+.projects .project-cover .chip-row,
+.projects .project-cover .project-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.projects .project-cover .chip-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.projects .chip {
+  background: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+  font-weight: 200;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  backdrop-filter: blur(6px);
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.projects .project-icon {
+  font-size: 32px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}
+
+.projects .project-body {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.projects .project-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.projects .project-desc {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1.6;
+}
+
+.projects .project-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  font-size: 0.9rem;
+}
+
+.projects .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projects .tag {
+  background: color-mix(in srgb, var(--accent-color), transparent 82%);
+  color: var(--heading-color);
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.projects .cover-1 { background-color: #0f74d3; }
+.projects .cover-2 { background-color: #1f3b73; }
+.projects .cover-3 { background-color: #0b4f6c; }
+.projects .cover-4 { background-color: #1b4d3e; }
+.projects .cover-5 { background-color: #3f2b96; }
+.projects .cover-6 { background-color: #6a11cb; }
+
+.projects .cover-1::before { background: linear-gradient(135deg, rgba(15, 116, 211, 0.25), rgba(96, 169, 255, 0.35)); }
+.projects .cover-2::before { background: linear-gradient(135deg, rgba(31, 59, 115, 0.25), rgba(84, 104, 255, 0.35)); }
+.projects .cover-3::before { background: linear-gradient(135deg, rgba(11, 79, 108, 0.25), rgba(57, 192, 237, 0.35)); }
+.projects .cover-4::before { background: linear-gradient(135deg, rgba(27, 77, 62, 0.25), rgba(84, 209, 185, 0.35)); }
+.projects .cover-5::before { background: linear-gradient(135deg, rgba(63, 43, 150, 0.25), rgba(168, 192, 255, 0.35)); }
+.projects .cover-6::before { background: linear-gradient(135deg, rgba(106, 17, 203, 0.25), rgba(37, 117, 252, 0.35)); }
+
+/* awards */
+.awards {
+  background: var(--background-color);
+  padding-top: 40px;
+}
+
+.awards .awards-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.awards .award-card {
+  background: var(--surface-color);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 16px 50px color-mix(in srgb, var(--default-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.awards .award-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.awards .award-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-color), transparent 78%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--heading-color);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.awards .award-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.awards .award-meta {
+  margin: 2px 0 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .projects .project-cover {
+    min-height: 240px;
+    background-size: 125%;
+  }
+
+  .projects .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .projects .project-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3193,7 +3625,8 @@ section,
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#awards">Awards</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -3212,13 +3645,14 @@ section,
 
           <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
             <div class="content-wrapper">
+              <p class="hero-name">Anvay Ajmera</p>
               <h1 class="hero-title"><span class="typed" data-typed-items="Technical Innovator, UN Youth Leader, Full-stack Developer"></span></h1>
               <p class="lead">I'm Anvay Ajmera, a passionate technology enthusiast and youth STEM changemaker advancing SDG 4. With experience leading initiatives across engineering, web development, and global advocacy, I strive to bridge educational gaps and create meaningful change.</p>
 
               <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
                 <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Major Projects</span>
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat-item">
                   <span class="purecounter" data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="2">0</span>
@@ -3231,8 +3665,7 @@ section,
               </div>
 
               <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="#resume" class="btn btn-primary">View My Resume</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
               </div>
 
               <div class="social-links" data-aos="fade-up" data-aos-delay="400">
@@ -3326,31 +3759,8 @@ section,
                 </div>
               </div>
 
-              <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
-                <div class="timeline-item">
-                  <div class="year">2023</div>
-                  <div class="description">Started at Bridgewater-Raritan High School, began leadership roles</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="year">2024</div>
-                  <div class="description">Taught engineering and coding lessons at school, brought 50 students to state FBLA victory</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="year">2025</div>
-                  <div class="description">UN Speaker/Representative and BRHS Board of Education Website Development Intern</div>
-                </div>
-              </div>
-
               <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
-                <div class="fun-fact">
-                  <span class="emoji">🚀</span>
-                  <span class="text">High school student creating global impact</span>
-                  <span class="emoji">🚀</span>
-                </div>
-                <div class="action-buttons">
-                  <a href="#resume" class="btn btn-primary">View My Resume</a>
-                  <a href="mailto:anvayajmera9@gmail.com" class="btn btn-outline">Contact Me</a>
-                </div>
+                
               </div>
 
             </div>
@@ -3362,374 +3772,197 @@ section,
 
     </section><!-- /About Section -->
 
-    <!-- skills section -->
-    <section id="skills" class="skills section">
+    <!-- projects section -->
+    <section id="projects" class="projects section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="skills-grid">
-              <div class="row g-4">
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-code-slash"></i>
-                      <h3>Web Development</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">HTML/CSS</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">JavaScript</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Bootstrap</span>
-                          <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- end web dev card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-cpu"></i>
-                      <h3>Engineering & Programming</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Java</span>
-                          <span class="skill-percentage">92%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Arduino</span>
-                          <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Python</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- end engineering card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-gear"></i>
-                      <h3>Robotics & AI</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Robotics</span>
-                          <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Machine Learning</span>
-                          <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">AI Stabilization</span>
-                          <span class="skill-percentage">78%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- end robotics card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-people"></i>
-                      <h3>Leadership & Management</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Team Leadership</span>
-                          <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Non-profit Management</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Public Speaking</span>
-                          <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- end leadership card -->
-                </div>
-              </div>
-            </div><!-- end skills grid -->
-          </div>
-
-          <div class="col-lg-4">
-            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
-              <h3>Professional Expertise</h3>
-              <p>As a technical innovator and youth STEM changemaker, I combine engineering excellence with leadership skills to drive meaningful impact through technology and education initiatives.</p>
-
-              <div class="summary-stats">
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="stat-circle">
-                    <i class="bi bi-trophy"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">1st</span>
-                    <span class="stat-label">Nationals Engineering RoboCup Jr USA</span>
-                  </div>
-                </div>
-
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="stat-circle">
-                    <i class="bi bi-trophy"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">7th</span>
-                    <span class="stat-label">Nationals Web Design FBLA</span>
-                  </div>
-                </div>
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="stat-circle">
-                    <i class="bi bi-trophy"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">1st</span>
-                    <span class="stat-label"> New Jersey Web Design FBLA</span>
-                  </div>
-                </div>
-
-              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
-                <h4>Achievements</h4>
-                <div class="badge-list">
-                  
-                  <div class="skill-badge">High-altitude Balloon Research</div>
-                  <div class="skill-badge">FBLA State & National Winner</div>
-                  <div class="skill-badge">United Nations Representative in STEM </div>
-                  <div class="skill-badge">AP Computer Science Score: 5</div>
-                </div>
-              </div>
-            </div><!-- end skills summary -->
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- resume section -->
-    <section id="resume" class="resume section">
-
-      <!-- section title -->
       <div class="container section-title">
-        <h2>Resume</h2>
-        <p>My journey in technology, engineering, and leadership, demonstrated in multiple impactful roles</p>
-      </div><!-- end section title -->
+        <h2>Projects</h2>
+        <p>View my six projects that blend engineering, storytelling, and impact.</p>
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="project-grid">
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="experience-section">
-              <div class="section-header">
-                <h2><i class="bi bi-briefcase"></i> Experience & Leadership</h2>
-                <p class="section-subtitle">Leading teams and creating impact through technology and innovation across multiple organizations.</p>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-cover cover-1" style="background-image: url('orionispic.jpg'); background-size: 155%; background-position: 30% center;">
+              <div class="chip-row">
+                <span class="chip">HAB Research</span>
+                <span class="chip">2025</span>
               </div>
-
-              <div class="experience-cards">
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Director of Digital Solutions</h3>
-                      <h4>APEERS</h4>
-                    </div>
-                    <span class="duration">Jul 2025 - Present</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Leading a team of 60+ Regional Directors and interns to deliver client-facing digital solutions for 150+ local businesses in New Jersey.</p>
-                    <ul class="achievements">
-                      <li>Managed teams of 60+ professionals across regional operations</li>
-                      <li>Delivered digital solutions for 150+ businesses</li>
-                      <li>Affiliated with Somerset Business Hub for business innovation</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>YSWS Combinator Intern</h3>
-                      <h4>Hack Club</h4>
-                    </div>
-                    <span class="duration">May 2025 - Present</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Selected for Hack Club's fully funded resource-shipping program empowering students through hands-on STEM learning, advancing SDG 4.</p>
-                    <ul class="achievements">
-                      <li>Designed YSWS track distributing Arduino kits to 50,000+ teens internationally</li>
-                      <li>In conversation with CEO to integrate UN partnerships</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>United Nations Ambassador</h3>
-                      <h4>Dynamic Teen Coalition</h4>
-                    </div>
-                    <span class="duration">Dec 2024 - Present</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Representing youth voices in STEM education and sustainability initiatives at UN forums, advocating for SDG 4 and educational equity globally.</p>
-                    <ul class="achievements">
-                      <li>Advocated & spoke for for youth STEM education at UN General Assembly & Trusteeship Council Meetings</li>
-                      <li>Developed policy recommendations for advancing SDG 4 implementation</li>
-                      <li>Collaborated with international delegates on educational innovation strategies</li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="project-icon"><i class="bi bi-broadcast-pin"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Orionis HAB Research Project</h3>
+              <p class="project-desc">Launched high-altitude payloads with spectroscopy, custom sensor modules, and hand-soldered CosmicWatch boards; I am now processing and visualizing the captured data.</p>
+              <div class="project-meta"><i class="bi bi-speedometer2"></i> Live flight telemetry + post-flight analytics</div>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">MQTT</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">Spectroscopy</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="education-section">
-              <div class="section-header">
-                <h2><i class="bi bi-mortarboard"></i> Education & Achievements</h2>
-                <p class="section-subtitle">Academic excellence combined with extracurricular leadership and competitive achievements.</p>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-cover cover-2" style="background-image: url('panthervenuepic.jpg'); background-size: 150%; background-position: 35% center;">
+              <div class="chip-row">
+                <span class="chip">School Events</span>
+                <span class="chip">2025</span>
               </div>
-
-              <div class="education-timeline">
-                <div class="timeline-track"></div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>High School - Aerospace Engineering Track</h3>
-                      <span class="year">2023 - 2027</span>
-                    </div>
-                    <h4 class="institution">Bridgewater-Raritan High School</h4>
-                    <p>Grade 11 student pursuing Aerospace, Aeronautical and Astronautical/Space Engineering. President of multiple clubs including BR Engineering, TSA, and BR Astronomy.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="350">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>New England Sci Tech</h3>
-                      <span class="year">2024 - Present</span>
-                    </div>
-                    <h4 class="institution">Research Development Program</h4>
-                    <p>Developed advanced research project incorporating machine learning algorithms for data analysis and pattern recognition. Created innovative solutions combining traditional engineering principles with cutting-edge AI technologies for practical applications.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Science Mentorship Institute</h3>
-                      <span class="year">2025 - Present</span>
-                    </div>
-                    <h4 class="institution">Electrical Engineering Track</h4>
-                    <p>Accepted into prestigious program for mentorship by experienced graduate-level alumni. Developing research alongside university professors using high-altitude balloon data.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="500">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>AP Courses & Test Scores</h3>
-                      <span class="year">2024 - 2025</span>
-                    </div>
-                    <h4 class="institution">Advanced Placement Program</h4>
-                    <p>AP Computer Science A: Score 5, AP Seminar: Score 5. Demonstrating excellence in both technical and analytical subjects.</p>
-                  </div>
-                </div>
+              <div class="project-icon"><i class="bi bi-vr"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">PantherVenue Website</h3>
+              <p class="project-desc">FBLA Website Design build for Bridgewater-Raritan HS, featuring an advanced backend handling system. Full events center now moving toward school board adoption.</p>
+              <div class="project-meta"><i class="bi bi-geo-alt"></i> Designed to deploy on district infrastructure</div>
+              <div class="project-tags">
+                <span class="tag">jQuery</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">JS</span>
               </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-cover cover-3" style="background-image: url('bowlingpinpic.jpg');">
+              <div class="chip-row">
+                <span class="chip">Robotics + Vision</span>
+                <span class="chip">2024</span>
+              </div>
+              <div class="project-icon"><i class="bi bi-cloud-drizzle"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Automatic Bowling System using AMD AI & LeRobot Arm</h3>
+              <p class="project-desc">Built in 52 hours at the AMD Open Robotics Hackathon: automated lane cleaning using AI vision, robotics control, and rapid hardware integration.</p>
+              <div class="project-meta"><i class="bi bi-lightning-charge"></i> Two-person build; award-winning delivery</div>
+              <div class="project-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">YOLO</span>
+                <span class="tag">ROS2</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Robotics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-cover cover-4" style="background-image: url('enginuitypic.jpg');">
+              <div class="chip-row">
+                <span class="chip">STEM Access</span>
+                <span class="chip">2025</span>
+              </div>
+              <div class="project-icon"><i class="bi bi-people"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Enginuity STEM Program</h3>
+              <p class="project-desc">UN Youth STEM initiative delivering self-developed kits, curriculum, and computers to nonprofits worldwide. Fundraised $15K+ to close the digital divide.</p>
+              <div class="project-meta"><i class="bi bi-heart"></i> Partnered with orgs like Siblings Keeper</div>
+              <div class="project-tags">
+                <span class="tag">Program Design</span>
+                <span class="tag">Fundraising</span>
+                <span class="tag">Curriculum</span>
+                <span class="tag">Logistics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-cover cover-5" style="background-image: url('tinkopic.png'); background-size: 165%; background-position: center;">
+              <div class="chip-row">
+                <span class="chip">Hack Club</span>
+                <span class="chip">2025</span>
+              </div>
+              <div class="project-icon"><i class="bi bi-robot"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Tinko Hack Club Initiative</h3>
+              <p class="project-desc">Program rewarding high schoolers with hardware for CAD enclosures that support their builds. Thousands in gear ready to ship.</p>
+              <div class="project-meta"><i class="bi bi-box-seam"></i> From concept to scalable giveaway pipeline</div>
+              <div class="project-tags">
+                <span class="tag">Program Ops</span>
+                <span class="tag">Sponsorships</span>
+                <span class="tag">CAD</span>
+                <span class="tag">Community</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="project-cover cover-6" style="background-image: url('robotpic.jpg');">
+              <div class="chip-row">
+                <span class="chip">Competition</span>
+                <span class="chip">2026</span>
+              </div>
+              <div class="project-icon"><i class="bi bi-globe-americas"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">RoboCup Junior Robot</h3>
+              <p class="project-desc">Advanced Rescue Line bot for RoboCup Junior 2026 with vision, autonomy, and robust field-ready hardware.</p>
+              <div class="project-meta"><i class="bi bi-cpu"></i> Full-stack robotics: vision, control, telemetry</div>
+              <div class="project-tags">
+                <span class="tag">YOLO</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">PlatformIO</span>
+                <span class="tag">Embedded C++</span>
+                <span class="tag">Robotics</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Projects Section -->
+
+    <!-- awards section -->
+    <section id="awards" class="awards section">
+
+      <div class="container section-title">
+        <h2>Awards</h2>
+        <p>Highlights that capture leadership, technical excellence, and community impact.</p>
+      </div>
+
+      <div class="container">
+        <div class="awards-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="award-card">
+            <span class="award-icon"><i class="bi bi-trophy-fill"></i></span>
+            <div>
+              <h4 class="award-title">7th Place Nationals: FBLA Website Design</h4>
+            </div>
+          </div>
+          <div class="award-card">
+            <span class="award-icon"><i class="bi bi-award-fill"></i></span>
+            <div>
+              <h4 class="award-title">1st Place Nationals: RoboCup Junior Engineering</h4>
+            </div>
+          </div>
+          <div class="award-card">
+            <span class="award-icon"><i class="bi bi-robot"></i></span>
+            <div>
+              <h4 class="award-title">1st Place New Jersey: FBLA Website Design</h4>
+            </div>
+          </div>
+          <div class="award-card">
+            <span class="award-icon"><i class="bi bi-stars"></i></span>
+            <div>
+              <h4 class="award-title">ECOSOC Youth Forum Speaker Selection</h4>
+            </div>
+          </div>
+          <div class="award-card">
+            <span class="award-icon"><i class="bi bi-people-fill"></i></span>
+            <div>
+              <h4 class="award-title">Science Mentorship Institite EE Fellowship</h4>
             </div>
           </div>
         </div>
-
       </div>
 
-    </section><!-- /Resume Section -->
+    </section><!-- /Awards Section -->
 
- 
     <!-- contact section -->
     <section id="contact" class="contact section light-background">
 
@@ -3836,23 +4069,71 @@ section,
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="panther-footer-final">
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Anvay Ajmera</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="mailto:anvayajmera9@gmail.com"><i class="bi bi-envelope"></i></a>
-        <a href="https://linkedin.com/in/anvay-ajmera-933058289"><i class="bi bi-linkedin"></i></a>
-        <a href=""><i class="bi bi-github"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-      </div>
-      <div class="credits">
-        Designed using <a href="https://bootstrapmade.com/">Bootstrap</a>
+    <div class="footer-shape-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <div class="panther-footer-content-area">
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+
+          <div class="col-lg-4 col-md-12 panther-footer-info">
+            <div class="panther-footer-logo d-flex align-items-center">
+              <span class="footer-mark">AA</span>
+              <div>
+                <p class="footer-name">Anvay Ajmera</p>
+                <p class="footer-title">Developer & Youth STEM Advocate</p>
+              </div>
+            </div>
+            <p>Building tech that closes education gaps and elevates student-led innovation across robotics, web, and global advocacy.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 panther-footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#projects">Projects</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#awards">Awards</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-5 col-12 panther-footer-contact">
+            <h4>Connect</h4>
+            <ul>
+              <li><i class="bi bi-geo-alt"></i> Bridgewater Township, NJ</li>
+              <li><i class="bi bi-telephone"></i> <a href="tel:+19085244059">+1 (908) 524-4059</a></li>
+              <li><i class="bi bi-envelope"></i> <a href="mailto:anvayajmera9@gmail.com">anvayajmera9@gmail.com</a></li>
+              <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/anvay-ajmera-933058289/">LinkedIn</a></li>
+              <li><i class="bi bi-github"></i> <a href="https://github.com/anvayajmera">GitHub</a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </div>
 
+    <div class="panther-footer-bottom-bar">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="copyright-credits-wrapper">
+          © Copyright <strong><span>Anvay Ajmera</span></strong>. All rights reserved.
+        </div>
+      </div>
+      <div class="footer-social-container">
+        <svg class="footer-social-blob-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
+          <path class="footer-social-blob-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"></path>
+        </svg>
+        <a href="mailto:anvayajmera9@gmail.com" class="social-link"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/anvay-ajmera-933058289/" target="_blank" rel="noreferrer" class="social-link"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/anvayajmera" target="_blank" rel="noreferrer" class="social-link"><i class="bi bi-github"></i></a>
+        <a href="https://instagram.com/anvay_ajmera" target="_blank" rel="noreferrer" class="social-link"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
   </footer>
 
   <!-- scroll top -->
